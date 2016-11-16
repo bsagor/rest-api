@@ -66,7 +66,6 @@ F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\ru
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\JSONParser.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\TradeDescription.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\controller\DrugGenericDetails.java
-F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\LoginEntity.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\Significance.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\controller\SubFormDetails.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\DrugInteraction.java
@@ -74,6 +73,7 @@ F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\ru
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\UnitMeasurement.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\LabRequest.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\controller\TradeDetails.java
+F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\DoctorLoginEntity.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\service\package-info.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\Nationlity.java
 F:\workspace_toshiba_pc\medisys_workspaces\android_workspaces\webservice-java\rufaida-rest-api-service\src\main\java\sa\com\rufaida\domain\Profile.java

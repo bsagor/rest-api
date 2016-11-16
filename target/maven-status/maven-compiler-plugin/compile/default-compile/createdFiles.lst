@@ -14,6 +14,7 @@ sa\com\rufaida\controller\FormulaNotesDetails.class
 sa\com\rufaida\domain\Trade.class
 sa\com\rufaida\domain\TradeDescription.class
 sa\com\rufaida\domain\LabRequest.class
+sa\com\rufaida\domain\DoctorLoginEntity.class
 sa\com\rufaida\controller\ProfileDetails.class
 sa\com\rufaida\domain\Clinic.class
 sa\com\rufaida\controller\UnitMeasurementDetails.class
@@ -21,7 +22,6 @@ sa\com\rufaida\domain\DrugMaster.class
 sa\com\rufaida\controller\InteractDrug.class
 sa\com\rufaida\controller\PatDischargeSummary.class
 sa\com\rufaida\domain\DoctorSchedule.class
-sa\com\rufaida\domain\LoginEntity.class
 sa\com\rufaida\domain\Route.class
 sa\com\rufaida\domain\Doctor.class
 sa\com\rufaida\domain\Drug.class

@@ -11,7 +11,8 @@ public class Database {
     	Connection connection = null;
     	try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			connection = DriverManager.getConnection("jdbc:oracle:thin:@100.43.0.18:1521:HISP", "gchksmc","gchksmc");
+//			connection = DriverManager.getConnection("jdbc:oracle:thin:@100.43.0.18:1521:HISP", "gchksmc","gchksmc");
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@weblogic-pc:1521:HMIS", "medisys","medisys");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

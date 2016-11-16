@@ -7,11 +7,11 @@ public class OracleConnect {
 	public Connection conn;
     public static OracleConnect db;
     public OracleConnect() {
-        String url= "jdbc:oracle:thin:@100.43.0.18:1521:HISP";
+        String url= "jdbc:oracle:thin:@weblogic-pc:1521:HMIS";
         String dbName = "database_name";
         String driver = "oracle.jdbc.driver.OracleDriver";
-        String userName = "gchksmc";
-        String password = "gchksmc";
+        String userName = "medisys";
+        String password = "medisys";
         try {
             Class.forName(driver).newInstance();
             this.conn = (Connection)DriverManager.getConnection(url,userName,password);
