@@ -2,6 +2,8 @@ sa\com\rufaida\domain\DoctorAppointmentEntity.class
 sa\com\rufaida\config\AllConfig.class
 sa\com\rufaida\domain\DoctorLoginEntity.class
 sa\com\rufaida\service\Database.class
+sa\com\rufaida\controller\LaboratoryReportController.class
 sa\com\rufaida\controller\DoctorAppointmentController.class
+sa\com\rufaida\domain\LaboratoryReportEntity.class
 sa\com\rufaida\app\Application.class
 sa\com\rufaida\controller\LoginController.class
