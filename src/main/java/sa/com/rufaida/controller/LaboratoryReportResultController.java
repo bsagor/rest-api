@@ -20,7 +20,7 @@ public class LaboratoryReportResultController {
 	
 	@RequestMapping("/rufaida/labReportResult")
     @ResponseBody
-	 public HashMap<String, Object> labReport(String patNo, String ws_code, String fromDate, String toDate, String reqNo)
+	 public HashMap<String, Object> labReport(String reqNo, String ws_code)
      {
 		HashMap<String, Object> plr = new HashMap<String, Object>();
 		List<LaboratoryReportResultEntity> laboratoryReportResultList = new ArrayList<LaboratoryReportResultEntity>();
@@ -30,12 +30,12 @@ public class LaboratoryReportResultController {
             		"T13015.T_PAT_NO, T13015.T_REQUEST_NO, T13018.T_ANALYSIS_CODE, T13015.T_REQUEST_DATE, T13015.T_REQUEST_TIME, T13015.T_SPEC_NO, T13016.T_LAB_NO, " +
             		"(SELECT MAX(T13017.T_RECEIVED_DATE) " + 
 	            		"FROM T13017 " + 
-	            		"WHERE T13017.T_REQUEST_NO = '0000000196' " + 
+	            		"WHERE T13017.T_REQUEST_NO = '" + reqNo + "' " + 
 	            		"AND T13017.T_WS_CODE = '1' " + 
 	            		"AND T13017.T_SPECIMEN_CODE IS NOT NULL) T_RECEIVED_DATE, " +
             		"(SELECT MAX(T13017.T_RECEIVED_TIME) " + 
             			"FROM T13017 " + 
-            			"WHERE T13017.T_REQUEST_NO= '0000000196' " + 
+            			"WHERE T13017.T_REQUEST_NO= '" + reqNo + "' " + 
             			"AND T13017.T_WS_CODE = '1' " + 
             			"AND T13017.T_SPECIMEN_CODE IS NOT NULL) T_RECEIVED_TIME, " + 
             			"T13018.T_NOTES,  NVL(T13018.T_UPD_DATE,T13018.T_ENTRY_DATE)T_UPD_DATE, " + 
@@ -46,7 +46,7 @@ public class LaboratoryReportResultController {
             			"FROM T13005 " + 
             			"WHERE T13005.T_SPECIMEN_CODE = (SELECT MAX(DISTINCT(T13017.T_SPECIMEN_CODE)) " + 
 															"FROM T13017 " + 
-															"WHERE T13017.T_REQUEST_NO= '0000000196' " + 
+															"WHERE T13017.T_REQUEST_NO= '" + reqNo + "' " + 
 															"AND T13017.T_WS_CODE = '1' " + 
 															"AND T13017.T_SPECIMEN_CODE IS NOT NULL)), '') T_SPECIMEN_NAME, " + 
 					"NVL( " +
@@ -119,9 +119,9 @@ public class LaboratoryReportResultController {
 				"AND " + 
 					"T13016.T_WS_CODE = T13004.T_WS_CODE " +  
 				"AND " + 
-					"T13015.T_REQUEST_NO = '0000000196' " +
+					"T13015.T_REQUEST_NO = '" + reqNo + "' " +
 				"AND " + 
-					"T13016.T_WS_CODE = '4' " + 
+					"T13016.T_WS_CODE = '" + ws_code + "' " + 
 				"AND " + 
 					"T13018.T_RESULT_VALUE IS NOT NULL " + 
 				"ORDER BY " + 
